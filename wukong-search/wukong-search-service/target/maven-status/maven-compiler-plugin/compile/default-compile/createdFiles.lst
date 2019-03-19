@@ -1,0 +1,7 @@
+com\wukong\search\service\impl\SearchServiceImpl.class
+com\wukong\search\mapper\SearchItemMapper.class
+com\wukong\search\listener\MyMessageListener.class
+com\wukong\search\listener\ItemDeleteMessageListener.class
+com\wukong\search\listener\ItemAddMessageListener.class
+com\wukong\search\service\impl\SearchItemServiceImpl.class
+com\wukong\search\dao\SearchDao.class

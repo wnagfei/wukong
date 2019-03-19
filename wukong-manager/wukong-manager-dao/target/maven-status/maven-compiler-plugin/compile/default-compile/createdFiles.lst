@@ -1,0 +1,13 @@
+com\wukong\mapper\TbItemMapper.class
+com\wukong\mapper\TbOrderItemMapper.class
+com\wukong\mapper\TbItemDescMapper.class
+com\wukong\mapper\TbContentCategoryMapper.class
+com\wukong\mapper\TbContentMapper.class
+com\wukong\mapper\TbItemCatMapper.class
+com\wukong\mapper\TbOrderShippingMapper.class
+com\wukong\mapper\TbItemParamMapper.class
+com\wukong\mapper\TbCartMapper.class
+com\wukong\mapper\TbUserMapper.class
+com\wukong\mapper\TbItemParamItemMapper.class
+com\wukong\mapper\TbReceiverMapper.class
+com\wukong\mapper\TbOrderMapper.class

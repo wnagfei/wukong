@@ -1,0 +1,5 @@
+com\wukong\service\CartService.class
+com\wukong\service\ItemCatService.class
+com\wukong\service\ItemService.class
+com\wukong\service\ItemDescService.class
+com\wukong\service\ItemParamService.class

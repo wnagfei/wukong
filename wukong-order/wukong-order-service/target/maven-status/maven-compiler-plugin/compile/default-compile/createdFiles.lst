@@ -1,0 +1,4 @@
+com\wukong\order\service\impl\OrderServiceImpl.class
+com\wukong\jedis\JedisClientPool.class
+com\wukong\jedis\JedisClientCluster.class
+com\wukong\jedis\JedisClient.class

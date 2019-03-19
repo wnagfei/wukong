@@ -1,0 +1,2 @@
+com\wukong\search\controller\SearchController.class
+com\wukong\search\exception\GlobalExceptionResolver.class

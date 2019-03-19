@@ -1,0 +1,670 @@
+
+
+[INFO ] 2018-04-23 08:52:15,849 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-04-23 08:52:15,850 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-04-23 08:52:15,850 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-04-23 08:52:15,850 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=yuanbao
+
+
+[INFO ] 2018-04-23 08:52:15,850 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\yuanbao
+
+
+[INFO ] 2018-04-23 08:52:15,851 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\workspace\eclipse-workspace\wukong-content
+
+
+[INFO ] 2018-04-23 08:52:16,079 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=47.95.202.32:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@1f6c83d6
+
+
+[INFO ] 2018-04-23 08:52:16,189 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 47.95.202.32/47.95.202.32:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-04-23 08:52:16,218 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 47.95.202.32/47.95.202.32:2181, initiating session
+
+
+[INFO ] 2018-04-23 08:52:16,233 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 47.95.202.32/47.95.202.32:2181, sessionid = 0x162345d04950c51, negotiated timeout = 30000
+
+
+[INFO ] 2018-04-23 08:52:16,236 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-04-23 08:52:16,238 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.155.1:20881/com.wukong.content.service.ContentCategoryService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,updateContentCateGory,deleteContentCategory,getContentCategoryList,addContentCateGory&pid=11040&side=provider&timeout=300000&timestamp=1524444712948, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-23 08:52:16,295 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.155.1:20881/com.wukong.content.service.ContentCategoryService?anyhost=true&application=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,updateContentCateGory,deleteContentCategory,getContentCategoryList,addContentCateGory&pid=11040&side=provider&timeout=300000&timestamp=1524444712948, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-23 08:52:16,354 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.155.1:20881/com.wukong.content.service.ContentCategoryService?anyhost=true&application=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,updateContentCateGory,deleteContentCategory,getContentCategoryList,addContentCateGory&pid=11040&side=provider&timeout=300000&timestamp=1524444712948, urls: [empty://192.168.155.1:20881/com.wukong.content.service.ContentCategoryService?anyhost=true&application=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,updateContentCateGory,deleteContentCategory,getContentCategoryList,addContentCateGory&pid=11040&side=provider&timeout=300000&timestamp=1524444712948], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[WARN ] 2018-04-23 08:52:16,631 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,837 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2018-04-23 08:52:16,848 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.wukong.content.service.ContentService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[WARN ] 2018-04-23 08:52:16,850 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,852 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,853 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,854 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,855 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2018-04-23 08:52:16,864 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.wukong.content.service.ContentService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-23 08:52:16,865 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.wukong.content.service.ContentService to url dubbo://192.168.155.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,addContent,updateContent,deleteContentByCid,getContentsByCId&pid=11040&side=provider&timeout=300000&timestamp=1524444736854, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-23 08:52:16,865 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.wukong.content.service.ContentService url dubbo://192.168.155.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,addContent,updateContent,deleteContentByCid,getContentsByCId&pid=11040&side=provider&timeout=300000&timestamp=1524444736854 to registry registry://47.95.202.32:2181/com.alibaba.dubbo.registry.RegistryService?application=wukong-content&dubbo=2.5.3&pid=11040&registry=zookeeper&timestamp=1524444736853, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-23 08:52:16,866 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.155.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,addContent,updateContent,deleteContentByCid,getContentsByCId&pid=11040&side=provider&timeout=300000&timestamp=1524444736854, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[WARN ] 2018-04-23 08:52:16,871 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,875 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,879 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,883 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,886 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,889 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,894 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,896 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,897 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2018-04-23 08:52:16,900 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.155.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,addContent,updateContent,deleteContentByCid,getContentsByCId&pid=11040&side=provider&timeout=300000&timestamp=1524444736854, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[WARN ] 2018-04-23 08:52:16,904 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,907 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,908 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,910 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,911 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,913 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,914 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,917 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,919 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,923 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,924 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,927 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,928 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,930 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,934 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,938 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,941 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,942 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,944 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,945 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[WARN ] 2018-04-23 08:52:16,946 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 127.0.0.1
+java.io.IOException: Can not lock the registry cache file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+[INFO ] 2018-04-23 08:52:16,947 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.155.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,addContent,updateContent,deleteContentByCid,getContentsByCId&pid=11040&side=provider&timeout=300000&timestamp=1524444736854, urls: [empty://192.168.155.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,addContent,updateContent,deleteContentByCid,getContentsByCId&pid=11040&side=provider&timeout=300000&timestamp=1524444736854], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-23 08:52:17,052 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)
+Root WebApplicationContext: initialization completed in 40608 ms
+
+
+[WARN ] 2018-04-23 09:11:01,730 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 20001ms for sessionid 0x162345d04950c51
+
+
+[INFO ] 2018-04-23 09:11:01,735 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 20001ms for sessionid 0x162345d04950c51, closing socket connection and attempting reconnect
+
+
+[INFO ] 2018-04-23 09:11:01,839 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Disconnected)
+
+
+[INFO ] 2018-04-23 09:11:03,447 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 47.95.202.32/47.95.202.32:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-04-23 09:11:04,858 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 47.95.202.32/47.95.202.32:2181, initiating session
+
+
+[INFO ] 2018-04-23 09:11:05,133 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 47.95.202.32/47.95.202.32:2181, sessionid = 0x162345d04950c51, negotiated timeout = 30000
+
+
+[INFO ] 2018-04-23 09:11:05,134 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-04-24 08:30:21,516 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:304)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2018-04-24 08:30:21,955 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:582)
+Refreshing Root WebApplicationContext: startup date [Tue Apr 24 08:30:21 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-04-24 08:30:22,119 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [D:\workspace\eclipse-workspace\wukong-content\wukong-content-service\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2018-04-24 08:30:22,558 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [D:\workspace\eclipse-workspace\wukong-content\wukong-content-service\target\classes\spring\applicationContext-redis.xml]
+
+
+[INFO ] 2018-04-24 08:30:22,732 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [D:\workspace\eclipse-workspace\wukong-content\wukong-content-service\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2018-04-24 08:30:22,954 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-04-24 08:30:22,987 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [D:\workspace\eclipse-workspace\wukong-content\wukong-content-service\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2018-04-24 08:30:23,305 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:155)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-04-24 08:30:27,337 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.wukong.content.service.ContentCategoryService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:27,525 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.wukong.content.service.ContentCategoryService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:27,526 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.wukong.content.service.ContentCategoryService to url dubbo://192.168.155.1:20881/com.wukong.content.service.ContentCategoryService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,updateContentCateGory,deleteContentCategory,getContentCategoryList,addContentCateGory&pid=12648&side=provider&timeout=300000&timestamp=1524529827354, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:27,646 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.wukong.content.service.ContentCategoryService url dubbo://192.168.155.1:20881/com.wukong.content.service.ContentCategoryService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,updateContentCateGory,deleteContentCategory,getContentCategoryList,addContentCateGory&pid=12648&side=provider&timeout=300000&timestamp=1524529827354 to registry registry://47.95.202.32:2181/com.alibaba.dubbo.registry.RegistryService?application=wukong-content&dubbo=2.5.3&pid=12648&registry=zookeeper&timestamp=1524529827344, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:28,080 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20881, export /192.168.155.1:20881, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:28,111 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\yuanbao\.dubbo\dubbo-registry-47.95.202.32.cache, data: {rvice?anyhost=true&application=wukong-content&category=configura=, com.wukong.search.service.SearchItemService=empty://192.168.155.1/com.wukong.search.service.SearchItemService?application=wukong-manager-web&category=configurators&dubbo=2.5.3&interface=com.wukong.search.service.SearchItemService&methods=importItemsToIndex&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445104906 empty://192.168.155.1/com.wukong.search.service.SearchItemService?application=wukong-manager-web&category=routers&dubbo=2.5.3&interface=com.wukong.search.service.SearchItemService&methods=importItemsToIndex&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445104906 dubbo://192.168.113.1:20882/com.wukong.search.service.SearchItemService?anyhost=true&application=wukong-search&dubbo=2.5.3&interface=com.wukong.search.service.SearchItemService&methods=importItemsToIndex&pid=12088&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524403276450 dubbo://192.168.155.1:20882/com.wukong.search.service.SearchItemService?anyhost=true&application=wukong-search&dubbo=2.5.3&interface=com.wukong.search.service.SearchItemService&methods=importItemsToIndex&pid=5552&side=provider&timeout=300000&timestamp=1524444722112 dubbo://192.168.0.100:20882/com.wukong.search.service.SearchItemService?anyhost=true&application=wukong-search&dubbo=2.5.3&interface=com.wukong.search.service.SearchItemService&methods=importItemsToIndex&pid=16864&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524396543564, com.wukong.sso.service.UserService=empty://192.168.155.1/com.wukong.sso.service.UserService?application=wukong-cart-web&category=configurators&dubbo=2.5.3&interface=com.wukong.sso.service.UserService&methods=logout,geTbUser,getUserByToken,checkDate,login,register&pid=1468&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524114777186 empty://192.168.155.1/com.wukong.sso.service.UserService?application=wukong-cart-web&category=routers&dubbo=2.5.3&interface=com.wukong.sso.service.UserService&methods=logout,geTbUser,getUserByToken,checkDate,login,register&pid=1468&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524114777186 dubbo://192.168.155.1:20883/com.wukong.sso.service.UserService?anyhost=true&application=wukong-sso&dubbo=2.5.3&interface=com.wukong.sso.service.UserService&methods=logout,geTbUser,getUserByToken,checkDate,login,register&pid=15596&side=provider&timeout=300000&timestamp=1524114718119 dubbo://172.17.20.127:20883/com.wukong.sso.service.UserService?anyhost=true&application=wukong-sso&dubbo=2.5.3&interface=com.wukong.sso.service.UserService&methods=logout,getUserByToken,checkDate,login,register&pid=4220&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1523950529209, com.wukong.content.service.ContentCategoryService=empty://192.168.155.1/com.wukong.content.service.ContentCategoryService?application=wukong-manager-web&category=configurators&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,updateContentCateGory,deleteContentCategory,getContentCategoryList,addContentCateGory&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445082237 empty://192.168.155.1/com.wukong.content.service.ContentCategoryService?application=wukong-manager-web&category=routers&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,updateContentCateGory,deleteContentCategory,getContentCategoryList,addContentCateGory&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445082237 dubbo://192.168.0.100:20881/com.wukong.content.service.ContentCategoryService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=updateContentCateGory,getContentCategoryList,addContentCateGory&pid=15992&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524396438122 dubbo://192.168.113.1:20881/com.wukong.content.service.ContentCategoryService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,addContentCategory,deleteContentCategory,updateContentCategory,getContentCategoryList&pid=19996&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524403185029 dubbo://192.168.155.1:20881/com.wukong.content.service.ContentCategoryService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,updateContentCateGory,deleteContentCategory,getContentCategoryList,addContentCateGory&pid=11040&side=provider&timeout=300000&timestamp=1524444712948, &side=consumer&timestamp=1523944210089=empty://192.168.155.1/com.wukong.service.ItemDescService?application=wukong-manager-web&category=routers&dubbo=2.5.3&interface=com.wukong.service.ItemDescService&methods=deleteItemDescByItemIdList,getItemDescById&pid=2088&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1523944210089 dubbo://192.168.113.1:20880/com.wukong.service.ItemDescService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemDescService&methods=deleteItemDescByItemIdList,getItemDescById&pid=4524&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1523929650421 dubbo://192.168.155.1:20880/com.wukong.service.ItemDescService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemDescService&methods=deleteItemDescByItemIdList,getItemDescById&pid=6816&side=provider&timeout=300000&timestamp=1523943863401, emParamItemByItemId&pid=11508&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524030002955=empty://192.168.155.1/com.wukong.service.ItemParamService?application=wukong-manager-web&category=routers&dubbo=2.5.3&interface=com.wukong.service.ItemParamService&methods=getItemParamList,getItemParamItemByItemId2,deleteItemParamByItemIdList,getItemParamItemByItemId&pid=11508&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524030002955 dubbo://192.168.113.1:20880/com.wukong.service.ItemParamService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemParamService&methods=getItemParamList,getItemParamItemByItemId2,deleteItemParamByItemIdList,getItemParamItemByItemId&pid=12140&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524027590872 dubbo://192.168.155.1:20880/com.wukong.service.ItemParamService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemParamService&methods=getItemParamList,getItemParamItemByItemId2,deleteItemParamByItemIdList,getItemParamItemByItemId&pid=9656&side=provider&timeout=300000&timestamp=1524029696133, com.wukong.service.ItemService=empty://192.168.155.1/com.wukong.service.ItemService?application=wukong-manager-web&category=configurators&dubbo=2.5.3&interface=com.wukong.service.ItemService&methods=getTbItemDescById,instockItems,getItemList,addItem,deleteItems,reshelfItems,updateItemAndDesc,geItemById&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445105249 empty://192.168.155.1/com.wukong.service.ItemService?application=wukong-manager-web&category=routers&dubbo=2.5.3&interface=com.wukong.service.ItemService&methods=getTbItemDescById,instockItems,getItemList,addItem,deleteItems,reshelfItems,updateItemAndDesc,geItemById&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445105249 dubbo://192.168.113.1:20880/com.wukong.service.ItemService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemService&methods=getItemList,instockItems,addItem,getbItemDescById,deleteItems,getItemById,updateItem,reshelfItems,updateItemAndDesc&pid=17156&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524403223140 dubbo://192.168.155.1:20880/com.wukong.service.ItemService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemService&methods=getItemList,instockItems,addItem,getTbItemDescById,deleteItems,reshelfItems,geItemById,updateItemAndDesc&pid=10324&side=provider&timeout=300000&timestamp=1524444717462 dubbo://192.168.0.100:20880/com.wukong.service.ItemService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemService&methods=getTbItemDescById,getItemList,addItem,geItemById&pid=5220&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524396386022, com.wukong.search.service.SearchService=empty://192.168.155.1:20882/com.wukong.search.service.SearchService?anyhost=true&application=wukong-search&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.search.service.SearchService&methods=search&pid=2320&side=provider&timeout=300000&timestamp=1524114696644, com.wukong.service.ItemCatService=empty://192.168.155.1/com.wukong.service.ItemCatService?application=wukong-manager-web&category=configurators&dubbo=2.5.3&interface=com.wukong.service.ItemCatService&methods=getItemCat,getItemCatList&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445105075 empty://192.168.155.1/com.wukong.service.ItemCatService?application=wukong-manager-web&category=routers&dubbo=2.5.3&interface=com.wukong.service.ItemCatService&methods=getItemCat,getItemCatList&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445105075 dubbo://192.168.113.1:20880/com.wukong.service.ItemCatService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemCatService&methods=getItemCatList,getItemCat,deleteItemCategory,updateItemCategory,addItemCategory,getItemCategoryById&pid=17156&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524403229985 dubbo://192.168.155.1:20880/com.wukong.service.ItemCatService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemCatService&methods=getItemCatList,getItemCat&pid=10324&side=provider&timeout=300000&timestamp=1524444736969 dubbo://192.168.0.100:20880/com.wukong.service.ItemCatService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemCatService&methods=getItemCatList&pid=5220&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524396386923, lication=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=updateContentCateGory,getContentCategoryList,addContentCateGory&pid=6436&side=provider&timeout=300000&timestamp=1522144044375=, com.wukong.service.ItemParamService=empty://192.168.155.1/com.wukong.service.ItemParamService?application=wukong-manager-web&category=configurators&dubbo=2.5.3&interface=com.wukong.service.ItemParamService&methods=getItemParamList,getItemParamItemByItemId2,deleteItemParamByItemIdList,getItemParamItemByItemId&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445105636 empty://192.168.155.1/com.wukong.service.ItemParamService?application=wukong-manager-web&category=routers&dubbo=2.5.3&interface=com.wukong.service.ItemParamService&methods=getItemParamList,getItemParamItemByItemId2,deleteItemParamByItemIdList,getItemParamItemByItemId&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445105636 dubbo://192.168.113.1:20880/com.wukong.service.ItemParamService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemParamService&methods=getItemParamList,getItemParamItemByItemId2,deleteItemParamByItemIdList,getItemParamItemByItemId&pid=17156&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524403230094 dubbo://192.168.0.100:20880/com.wukong.service.ItemParamService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemParamService&methods=getItemParamList&pid=5220&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524396387034 dubbo://192.168.155.1:20880/com.wukong.service.ItemParamService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemParamService&methods=getItemParamList,getItemParamItemByItemId2,deleteItemParamByItemIdList,getItemParamItemByItemId&pid=10324&side=provider&timeout=300000&timestamp=1524444737100, com.wukong.cart.service.CartService=empty://192.168.155.1:20885/com.wukong.cart.service.CartService?anyhost=true&application=wukong-order&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.cart.service.CartService&methods=deleteCartByUserId,getCartByUserId,geTbCartByUserIdANDItemId,addCart,deleteCartByUserIdANDItemId,deleteById,updateCart&pid=21296&side=provider&timeout=300000&timestamp=1524529747957, com.wukong.service.ItemDescService=empty://192.168.155.1/com.wukong.service.ItemDescService?application=wukong-manager-web&category=configurators&dubbo=2.5.3&interface=com.wukong.service.ItemDescService&methods=deleteItemDescByItemIdList,getItemDescById&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445105439 empty://192.168.155.1/com.wukong.service.ItemDescService?application=wukong-manager-web&category=routers&dubbo=2.5.3&interface=com.wukong.service.ItemDescService&methods=deleteItemDescByItemIdList,getItemDescById&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445105439 dubbo://192.168.113.1:20880/com.wukong.service.ItemDescService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemDescService&methods=deleteItemDescByItemIdList,getItemDescById&pid=17156&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524403230225 dubbo://192.168.155.1:20880/com.wukong.service.ItemDescService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemDescService&methods=deleteItemDescByItemIdList,getItemDescById&pid=10324&side=provider&timeout=300000&timestamp=1524444737222, com.wukong.service.CartService=empty://192.168.155.1:20880/com.wukong.service.CartService?anyhost=true&application=wukong-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.service.CartService&methods=addCart,getCartByUidAndItemId,updateCart&pid=10324&side=provider&timeout=300000&timestamp=1524444737304, com.wukong.searc&interface=com.wukong.cart.service.CartService&methods=deleteCartByUserId,getCartByUserId,geTbCartByUserIdANDItemId,addCart,deleteCartByUserIdANDItemId,deleteById,updateCart&pid=11260&side=provider&timeout=300000&timestamp=1524029392227=, com.wukong.order.service.OrderService=empty://192.168.155.1/com.wukong.order.service.OrderService?application=wukong-manager-web&category=configurators&dubbo=2.5.3&interface=com.wukong.order.service.OrderService&methods=createOrder,geTbOrderItemListByOrderId,getTbOrderListByUserId,getOrderList,updateOrderStatus5ByOrderId,getTbReceiverList,getTbReceiverById,addAddress,deleteReceiver,updateOrderStatus6ByOrderId,updateOrderStatus4ByOrderId&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445105831 empty://192.168.155.1/com.wukong.order.service.OrderService?application=wukong-manager-web&category=routers&dubbo=2.5.3&interface=com.wukong.order.service.OrderService&methods=createOrder,geTbOrderItemListByOrderId,getTbOrderListByUserId,getOrderList,updateOrderStatus5ByOrderId,getTbReceiverList,getTbReceiverById,addAddress,deleteReceiver,updateOrderStatus6ByOrderId,updateOrderStatus4ByOrderId&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445105831 dubbo://192.168.155.1:20884/com.wukong.order.service.OrderService?anyhost=true&application=wukong-order&dubbo=2.5.3&interface=com.wukong.order.service.OrderService&methods=createOrder,geTbOrderItemListByOrderId,getTbOrderListByUserId,getOrderList,updateOrderStatus5ByOrderId,addAddress,deleteReceiver,getTbReceiverById,getTbReceiverList,updateOrderStatus6ByOrderId,updateOrderStatus4ByOrderId&pid=9528&side=provider&timeout=300000&timestamp=1524444712939 dubbo://192.168.113.1:20884/com.wukong.order.service.OrderService?anyhost=true&application=wukong-order&dubbo=2.5.3&interface=com.wukong.order.service.OrderService&methods=createOrder,getOrderList,deleteOrder&pid=17732&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524407767441, com.wukong.content.service.ContentService=empty://192.168.155.1/com.wukong.content.service.ContentService?application=wukong-manager-web&category=configurators&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,deleteContentByCid,updateContent,addContent,getContentsByCId&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445104736 empty://192.168.155.1/com.wukong.content.service.ContentService?application=wukong-manager-web&category=routers&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,deleteContentByCid,updateContent,addContent,getContentsByCId&pid=13876&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1524445104736 dubbo://192.168.0.100:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=getContentsByCategoryId,getContents,addContent,getContentsByCId&pid=15992&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524396438707 dubbo://192.168.155.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,addContent,updateContent,deleteContentByCid,getContentsByCId&pid=11040&side=provider&timeout=300000&timestamp=1524444736854 dubbo://192.168.113.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=getContentList,deleteContents,getContentByCid,editContent,addContent,deleteContentByCid&pid=19996&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1524403189972, 155.1/com.wukong.service.ItemParamService?application=wukong-manager-web&category=routers&dubbo=2.5.3&interface=com.wukong.service.ItemParamService&methods=getItemParamList,getItemParamItemByItemId2,deleteItemParamByItemIdList,getItemParamItemByItemId&pid=15504&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1523512867915=dubbo://192.168.155.1:20880/com.wukong.service.ItemParamService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemParamService&methods=getItemParamList,getItemParamItemByItemId2,deleteItemParamByItemIdList,getItemParamItemByItemId&pid=36996&side=provider&timeout=300000&timestamp=1523508212451 dubbo://192.168.113.1:20880/com.wukong.service.ItemParamService?anyhost=true&application=wukong-manager&dubbo=2.5.3&interface=com.wukong.service.ItemParamService&methods=getItemParamList,getItemParamItemByItemId2,deleteItemParamByItemIdList,getItemParamItemByItemId&pid=15896&revision=0.0.1-SNAPSHOT&side=provider&timeout=300000&timestamp=1523497885840, rvice?anyhost=true&application=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=updateContentCateGory,getContentCategoryList,addContentCateGory&pid=6436&side=provider&timeout=300000&timestamp=1522144044375=}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:28,158 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-04-24 08:30:48,607 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-04-24 08:30:48,608 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=LAPTOP-N53CNDNL
+
+
+[INFO ] 2018-04-24 08:30:48,609 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_151
+
+
+[INFO ] 2018-04-24 08:30:48,609 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-04-24 08:30:48,609 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Program Files\SoftWare\work\Java\jdk1.8.0_151\jre
+
+
+[INFO ] 2018-04-24 08:30:48,609 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\Program Files\SoftWare\work\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar
+
+
+[INFO ] 2018-04-24 08:30:48,610 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Program Files\SoftWare\work\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/Program Files/SoftWare/work/Java/jdk1.8.0_151/bin/../jre/bin/server;D:/Program Files/SoftWare/work/Java/jdk1.8.0_151/bin/../jre/bin;D:/Program Files/SoftWare/work/Java/jdk1.8.0_151/bin/../jre/lib/amd64;D:\Program Files\SoftWare\work\Python36-32\Scripts\;D:\Program Files\SoftWare\work\Python36-32\;C:\Program Files (x86)\Windows Resource Kits\Tools\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;D:\Program Files\SoftWare\work\Java\jdk1.8.0_151\bin;D:\Program Files\SoftWare\work\Java\jre1.8.0_151\bin;D:\Program Files\SoftWare\work\apache-tomcat-8.0.47\lib;D:\Program Files\SoftWare\work\apache-tomcat-8.0.47\bin;D:\Program Files\SoftWare\work\apache-maven-3.5.2\bin;D:\Program Files\SoftWare\work\Python2.7;D:\Program Files\SoftWare\work\Python2.7\Scripts;C:\Program Files\OpenSSH\bin;D:\Program Files\SoftWare\work\Git\cmd;D:\Program Files\SoftWare\work\mysql-5.6.38-winx64\bin;D:\ymx\software\apache-maven-3.5.2\bin;C:\Program Files (x86)\VisualSVN\bin;D:\Program Files\SoftWare\work\VisualSVN Serve\bin;C:\Users\yuanbao\AppData\Local\Microsoft\WindowsApps;D:\Program Files\SoftWare\work\npl;;C:\WINDOWS\System32;;.
+
+
+[INFO ] 2018-04-24 08:30:48,610 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\yuanbao\AppData\Local\Temp\
+
+
+[INFO ] 2018-04-24 08:30:48,610 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-04-24 08:30:48,610 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-04-24 08:30:48,611 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-04-24 08:30:48,611 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-04-24 08:30:48,611 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=yuanbao
+
+
+[INFO ] 2018-04-24 08:30:48,612 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\yuanbao
+
+
+[INFO ] 2018-04-24 08:30:48,612 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\workspace\eclipse-workspace\wukong-content
+
+
+[INFO ] 2018-04-24 08:30:48,613 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=47.95.202.32:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@7b856dd6
+
+
+[INFO ] 2018-04-24 08:30:48,688 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 47.95.202.32/47.95.202.32:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-04-24 08:30:48,695 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 47.95.202.32/47.95.202.32:2181, initiating session
+
+
+[INFO ] 2018-04-24 08:30:48,710 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 47.95.202.32/47.95.202.32:2181, sessionid = 0x162345d04950ca9, negotiated timeout = 30000
+
+
+[INFO ] 2018-04-24 08:30:48,712 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-04-24 08:30:48,714 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.155.1:20881/com.wukong.content.service.ContentCategoryService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,updateContentCateGory,deleteContentCategory,getContentCategoryList,addContentCateGory&pid=12648&side=provider&timeout=300000&timestamp=1524529827354, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:48,770 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.155.1:20881/com.wukong.content.service.ContentCategoryService?anyhost=true&application=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,updateContentCateGory,deleteContentCategory,getContentCategoryList,addContentCateGory&pid=12648&side=provider&timeout=300000&timestamp=1524529827354, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:48,824 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.155.1:20881/com.wukong.content.service.ContentCategoryService?anyhost=true&application=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,updateContentCateGory,deleteContentCategory,getContentCategoryList,addContentCateGory&pid=12648&side=provider&timeout=300000&timestamp=1524529827354, urls: [empty://192.168.155.1:20881/com.wukong.content.service.ContentCategoryService?anyhost=true&application=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentCategoryService&methods=getContentCategoryById,updateContentCateGory,deleteContentCategory,getContentCategoryList,addContentCateGory&pid=12648&side=provider&timeout=300000&timestamp=1524529827354], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:48,932 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.wukong.content.service.ContentService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:49,093 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.wukong.content.service.ContentService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:49,093 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.wukong.content.service.ContentService to url dubbo://192.168.155.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,deleteContentByCid,updateContent,addContent,getContentsByCId&pid=12648&side=provider&timeout=300000&timestamp=1524529848937, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:49,094 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.wukong.content.service.ContentService url dubbo://192.168.155.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,deleteContentByCid,updateContent,addContent,getContentsByCId&pid=12648&side=provider&timeout=300000&timestamp=1524529848937 to registry registry://47.95.202.32:2181/com.alibaba.dubbo.registry.RegistryService?application=wukong-content&dubbo=2.5.3&pid=12648&registry=zookeeper&timestamp=1524529848936, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:49,096 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.155.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,deleteContentByCid,updateContent,addContent,getContentsByCId&pid=12648&side=provider&timeout=300000&timestamp=1524529848937, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:49,123 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.155.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,deleteContentByCid,updateContent,addContent,getContentsByCId&pid=12648&side=provider&timeout=300000&timestamp=1524529848937, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:49,164 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.155.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,deleteContentByCid,updateContent,addContent,getContentsByCId&pid=12648&side=provider&timeout=300000&timestamp=1524529848937, urls: [empty://192.168.155.1:20881/com.wukong.content.service.ContentService?anyhost=true&application=wukong-content&category=configurators&check=false&dubbo=2.5.3&interface=com.wukong.content.service.ContentService&methods=deleteContents,getContentsByCategoryId,getContents,deleteContentByCid,updateContent,addContent,getContentsByCId&pid=12648&side=provider&timeout=300000&timestamp=1524529848937], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-04-24 08:30:49,168 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:344)
+Root WebApplicationContext: initialization completed in 27404 ms
